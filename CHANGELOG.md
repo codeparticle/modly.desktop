@@ -1,5 +1,46 @@
 # Changelog
 
+## [0.1.6](https://github.com/codeparticle/modly.web/compare/desktop-v0.1.5...desktop-v0.1.6) (2026-11-24)
+
+
+### Features
+
+* **desktop:** Poll for updates hourly while app is running ([#489](https://github.com/codeparticle/modly.web/pull/489))
+
+
+### Bug Fixes
+
+* **localproxy:** Bundle spaCy model binaries + tiktoken in sidecar — fixes proxy startup crash from runtime `pip install en_core_web_sm` ([#489](https://github.com/codeparticle/modly.web/pull/489))
+
+## [0.1.5](https://github.com/codeparticle/modly.web/compare/desktop-v0.1.4...desktop-v0.1.5) (2026-11-24)
+
+
+### Features
+
+* **desktop:** Wire up auto-updater `check()` on app launch; prompts to download and relaunch when a new release is published ([#485](https://github.com/codeparticle/modly.web/pull/485))
+
+## [0.1.4](https://github.com/codeparticle/modly.web/compare/desktop-v0.1.3...desktop-v0.1.4) (2026-11-23)
+
+
+### Bug Fixes
+
+* **localproxy:** Bundle `privacy_proxy` submodules in the sidecar binary so LiteLLM's runtime guardrail imports resolve ([#480](https://github.com/codeparticle/modly.web/pull/480))
+
+## [0.1.3](https://github.com/codeparticle/modly.web/compare/desktop-v0.1.2...desktop-v0.1.3) (2026-11-23)
+
+
+### Bug Fixes
+
+* **desktop:** Bake `VITE_MODLY_API_URL` into the release bundle; fixes post-login crash where the app couldn't reach the API ([#476](https://github.com/codeparticle/modly.web/pull/476))
+* **ci:** Sync `CHANGELOG.md` to the release repo and fix the release-body link to point at `CHANGELOG.md` at the modly.desktop root ([#476](https://github.com/codeparticle/modly.web/pull/476))
+
+## [0.1.2](https://github.com/codeparticle/modly.web/compare/desktop-v0.1.1...desktop-v0.1.2) (2026-11-23)
+
+
+### Bug Fixes
+
+* **desktop:** Bake `VITE_MODLY_APP_URL` into the release bundle ([#473](https://github.com/codeparticle/modly.web/pull/473))
+
 ## [0.1.1](https://github.com/codeparticle/modly.web/compare/desktop-v0.1.0...desktop-v0.1.1) (2026-11-19)
 
 
